@@ -1,1 +1,9 @@
-
+// get everything selected
+    string $sel[] = `ls -sl`;
+    //create loop
+for ($each in $sel)
+{
+    //do something
+    select $each;
+    move -r 0 1 0;
+}
